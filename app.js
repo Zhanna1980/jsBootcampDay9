@@ -2,12 +2,16 @@
  * Created by zhannalibman on 25/01/2017.
  */
 var express = require('express');
+//var path = require('path');
 var server = express();
 var cache = [];
 
 server.get('/', function (req, res) {
     res.sendFile("/Users/zhannalibman/targilim/jsBootcampDay9/index.html");
 });
+
+server.use('/', express.static(_dirname));
+//server.use('/static', express.static(path.join(_dirname, 'static')));
 
 server.use('/form', function(req, res, next){
     console.log('Someone try to access to /form');
