@@ -1,0 +1,23 @@
+{
+  "name": "jsbootcampday9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zhanna1980/jsBootcampDay9.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zhanna1980/jsBootcampDay9/issues"
+  },
+  "homepage": "https://github.com/Zhanna1980/jsBootcampDay9#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
