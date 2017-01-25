@@ -5,15 +5,15 @@
     <title>HTML Forms</title>
 </head>
 <body>
-<form action="https://www.google.com" method="get">
+<form action="http://localhost:8080/form" method="get">
     <table style="width: 300px; height: 100px">
         <tr>
             <td><label name="fullName">Full Name</label></td>
-            <td><input id="name" type="text" name="fullName" style="border: solid 1px" value="Ronaldo"/></td>
+            <td><input id="name" type="text" name="fullName" style="border: solid 1px" placeholder="Ronaldo"/></td>
         </tr>
         <tr>
             <td><label name="password">Password</label></td>
-            <td><input id="password" name="password" type="password" style="border: solid 1px" value="123"/></td>
+            <td><input id="password" name="password" type="password" style="border: solid 1px" placeholder="123"/></td>
         </tr>
         <tr>
             <td><label name="country">Country</label></td>
@@ -36,17 +36,17 @@
     <br/>
     <fieldset style="width: 300px">
         <legend>Pet's Policy</legend>
-        <input id="hasDog" type="checkbox" name="pet[]" checked="checked">
+        <input id="hasDog" type="checkbox" name="pet[]" checked="checked" value="dog">
         <label name="pet[]">I have a dog</label>
         <br>
-        <input id="hasCat" type="checkbox" name="pet[]" >
+        <input id="hasCat" type="checkbox" name="pet[]" value="cat" >
         <label name="pet[]">I have a cat</label>
         <br>
     </fieldset>
     <br/>
     <br/>
     <label name="about">Some words about me:</label>
-    <textarea name= "about" rows="4" cols="20">I'm interested in...</textarea>
+    <textarea name= "about" rows="4" cols="20" placeholder="I'm interested in..."></textarea>
     <br/>
     <br/>
     <input type="submit" value="Send to Server">
