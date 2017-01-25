@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Forms</title>
+</head>
+<body>
+<form action="https://www.google.com">
+    <table style="width: 300px; height: 100px">
+        <tr>
+            <td><label name="fullName">Full Name</label></td>
+            <td><input id="name" type="text" name="fullName" style="border: solid 1px" value="Ronaldo"/></td>
+        </tr>
+        <tr>
+            <td><label name="password">Password</label></td>
+            <td><input id="password" name="password" type="password" style="border: solid 1px" value="123"/></td>
+        </tr>
+        <tr>
+            <td><label name="country">Country</label></td>
+            <td><select name="country"><option value="china" selected="selected">China</option>
+                    <option value="israel">Israel</option>
+                    <option value="usa">USA</option>
+                    <option value="ukraine">Ukraine</option></select>
+            </td>
+        </tr>
+    </table>
+    <br/>
+    <br/>
+    <input id="male" type="radio" name="gender" value="male" checked="checked">
+    <label name="gender">Male</label>
+    <br>
+    <input id="female" type="radio" name="gender" value="female">
+    <label name="gender">Female</label>
+    <br>
+    <br/>
+    <br/>
+    <fieldset style="width: 300px">
+        <legend>Pet's Policy</legend>
+        <input id="hasDog" type="checkbox" name="pet[]" checked="checked">
+        <label name="pet[]">I have a dog</label>
+        <br>
+        <input id="hasCat" type="checkbox" name="pet[]" >
+        <label name="pet[]">I have a cat</label>
+        <br>
+    </fieldset>
+    <br/>
+    <br/>
+    <label name="about">Some words about me:</label>
+    <textarea name= "about" rows="4" cols="20">I'm interested in...</textarea>
+    <br/>
+    <br/>
+    <input type="submit" value="Send to Server">
+</form>
+
+</body>
+</html>
